@@ -70,7 +70,7 @@ jobs:
 
       - name: Scan Docker image for vulnerabilities with Trivy
         id: scan-image
-        uses: aquasecurity/trivy-action@0.33.1
+        uses: aquasecurity/trivy-action@0.28.0
         with:
           image-ref: ${{ env.IMAGE_NAME }}
           format: table
